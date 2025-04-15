@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.backPay {
+    background-image: linear-gradient(#34495E, #ad2167);
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-section {
+    display: none;
+    /* Hide all sections by default */
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.btnpay {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin:5px;
+    border-radius:10px;
+    background: #28a745;
+}
+.sucessPay{
+    color:green;
+    margin:10px;
+    text-align: center;
+    padding:8px;
+    font-size:30px;
+}
+#successMessage {
+    margin: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Show animation */
+#successMessage.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear;
+    margin: 10px;
+}
+
+/* Truck Animation */
+.truck-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    position: relative;
+    animation: moveTruck 2s linear infinite;
+    background-color: green;
+    border-radius:8px;
+    margin: 10px;
+}
+
+/* Truck moving animation */
+@keyframes moveTruck {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+/* Success Text */
+.success-text {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: green;
+    border-radius:8px;
+    margin: 10px;
+}
+.small-btn {
+    padding: 2px 5px;
+    font-size: 12px;
+    
+
+}
