@@ -39,7 +39,7 @@ function submitForm() {
         pasErrMsgEl.textContent = "";
     }
     if (isValid){
-        let storedEmail = localStorage.getItem("registeremail");
+        let storedEmail = localStorage.getItem("registeredEmail");
         let storedPassword = localStorage.getItem("registeredPassword");
         
         let enteredEmail = formData.email.trim().toLowerCase();
