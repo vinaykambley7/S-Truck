@@ -54,7 +54,7 @@
 
 
             alert("Registration successful! Please log in.");
-            window.location.href = "truck-3.html";
+            window.location.href = "truck-2.html";
         }
     });
     
