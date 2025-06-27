@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container bck-clr">
         <div class="row">
             <div class="col-12 col-md-12">
-                <div class="bck-clr">
+                <div>
                     <form id="registerForm" method="post">
                         <label for="username">Username:</label><br>
                         <input type="text" id="username" name="username" required><br>
@@ -30,11 +30,12 @@
                         <label for="password">Password:</label><br>
                         <input type="password" id="password" name="password" required><br>
                         <p id="passwordError"" class="error-message"></p> <br>
-                        <button type="submit" class="btn btn-primary m-3">Register</button>
 
                     </form>
-                    
-                    <a href="truck-2.html"><button class="button3 btn btn-primary m-3">Back</button></a>
+                    <div class="btn-group">
+                    <button type="submit" class="btn-primary">Register</button>
+                    <a href="truck-2.html"><button class="button3 ">Back</button></a>
+                    </div>
                 </div>
             </div>
         </div>
