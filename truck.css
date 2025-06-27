@@ -22,7 +22,7 @@ body {
     
 }
 
-/* Button responsive style */
+
 #navigateBtn {
     width: 80%;
     max-width: 300px;
@@ -32,7 +32,7 @@ body {
     margin:20px;
 }
 
-/* Extra responsiveness */
+
 @media (max-width: 576px) {
     .main-image {
         max-width: 90%;
@@ -44,3 +44,4 @@ body {
         padding: 10px;
     }
 }
+
